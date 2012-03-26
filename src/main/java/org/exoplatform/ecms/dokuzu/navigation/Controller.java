@@ -1,4 +1,4 @@
-package org.gatein.portal.dokuzu;
+package org.exoplatform.ecms.dokuzu.navigation;
 
 import org.exoplatform.portal.application.PortalRequestContext;
 import org.juzu.Path;

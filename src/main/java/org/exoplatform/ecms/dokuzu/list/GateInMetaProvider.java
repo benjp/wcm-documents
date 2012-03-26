@@ -1,4 +1,4 @@
-package org.gatein.portal.dokuzu;
+package org.exoplatform.ecms.dokuzu.list;
 
 import org.exoplatform.container.PortalContainer;
 
