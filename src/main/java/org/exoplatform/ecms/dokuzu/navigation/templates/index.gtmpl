@@ -1,5 +1,5 @@
-<div id="documents_div"></div>
+<div id="documents_navigation_div">NAVIGATION</div>
 
 <script>
-    $('#documents_div').css({'margin-left': 'auto', 'margin-right': 'auto', 'display': 'block', 'background-color': '#F00', 'padding': '10px'});
+    $('#documents_navigation_div').css({'margin-left': 'auto', 'margin-right': 'auto', 'display': 'block', 'background-color': '#F00', 'padding': '10px'});
 </script>
