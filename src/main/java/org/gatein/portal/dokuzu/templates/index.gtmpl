@@ -1,0 +1,5 @@
+<div id="documents_div"></div>
+
+<script>
+    $('#documents_div').css({'margin-left': 'auto', 'margin-right': 'auto', 'display': 'block', 'background-color': '#F00', 'padding': '10px'});
+</script>
