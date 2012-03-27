@@ -38,6 +38,7 @@
          <read-only>false</read-only>
        </preference>
      </portlet-preferences>
+     <supported-public-render-parameter>dokPath</supported-public-render-parameter>
    </portlet>
 
    <portlet>
@@ -74,6 +75,13 @@
          <read-only>false</read-only>
        </preference>
      </portlet-preferences>
+     <supported-public-render-parameter>dokPath</supported-public-render-parameter>
    </portlet>
+
+
+  <public-render-parameter>
+    <identifier>dokPath</identifier>
+    <qname>dokPath</qname>
+  </public-render-parameter>
 
 </portlet-app>

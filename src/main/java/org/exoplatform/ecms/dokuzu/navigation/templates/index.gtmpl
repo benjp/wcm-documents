@@ -1,4 +1,10 @@
-<div id="documents_navigation_div">NAVIGATION</div>
+<div id="documents_navigation_div">
+  NAVIGATION
+<form action="@{edit()}" method="post">
+   <input type="text" name="path" value=""/>
+   <input type="submit"/>
+</form>
+</div>
 
 <script>
     $('#documents_navigation_div').css({'margin-left': 'auto', 'margin-right': 'auto', 'display': 'block', 'background-color': '#F00', 'padding': '10px'});

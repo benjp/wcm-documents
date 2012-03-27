@@ -8,6 +8,8 @@ import org.juzu.template.Template;
 import javax.inject.Inject;
 import javax.portlet.PortletPreferences;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /** @author <a href="mailto:benjamin.paillereau@exoplatform.com">Benjamin Paillereau</a> */
 public class Controller
@@ -28,13 +30,14 @@ public class Controller
    }
 
    @View
-   public void index() throws IOException
+   public void index(String dokPath) throws IOException
    {
-      PortalRequestContext portalRequestContext = PortalRequestContext.getCurrentInstance();
-
       String workspace = portletPreferences.getValue("workspace", "collaboration");
 
-      indexTemplate.render();
+      Map<String, Object> parameters = new HashMap<String, Object>();
+      parameters.put("path", dokPath);
+
+      indexTemplate.render(parameters);
    }
 
 }

@@ -1,7 +1,9 @@
 package org.exoplatform.ecms.dokuzu.navigation;
 
 import org.exoplatform.portal.application.PortalRequestContext;
+import org.juzu.Action;
 import org.juzu.Path;
+import org.juzu.Response;
 import org.juzu.View;
 import org.juzu.template.Template;
 
@@ -33,10 +35,16 @@ public class Controller
    public void index() throws IOException
    {
       PortalRequestContext portalRequestContext = PortalRequestContext.getCurrentInstance();
-
       String workspace = portletPreferences.getValue("workspace", "collaboration");
 
       indexTemplate.render();
    }
+
+
+  @Action
+  public Response edit(String path)
+  {
+    return Controller_.index().setParameter("dokPath", path);
+  }
 
 }
