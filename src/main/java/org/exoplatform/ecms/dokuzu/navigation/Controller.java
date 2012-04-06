@@ -1,10 +1,7 @@
 package org.exoplatform.ecms.dokuzu.navigation;
 
 import org.exoplatform.portal.application.PortalRequestContext;
-import org.juzu.Action;
-import org.juzu.Path;
-import org.juzu.Response;
-import org.juzu.View;
+import org.juzu.*;
 import org.juzu.template.Template;
 
 import javax.inject.Inject;
@@ -21,6 +18,11 @@ public class Controller
    @Inject
    @Path("index.gtmpl")
    Template indexTemplate;
+
+   /** . */
+   @Inject
+   @Path("navigation.gtmpl")
+   Template navigationTemplate;
 
 
    @Inject
@@ -39,6 +41,11 @@ public class Controller
 
       indexTemplate.render();
    }
+
+  @Resource
+  public void getNavigation() {
+    navigationTemplate.render();
+  }
 
 
   @Action
