@@ -3,10 +3,7 @@ package org.exoplatform.ecms.dokuzu.list;
 import com.github.mustachejava.DefaultMustacheFactory;
 import com.github.mustachejava.Mustache;
 import com.github.mustachejava.MustacheFactory;
-import org.apache.commons.beanutils.*;
-import org.exoplatform.portal.application.PortalRequestContext;
 import org.juzu.Path;
-import org.juzu.Response;
 import org.juzu.View;
 import org.juzu.template.Template;
 
@@ -64,7 +61,6 @@ public class Controller
           "\t  {{#keywords}}\n" +
           "\t  Keyword: {{.}}\n" +
           "\t  {{/keywords}}\n";
-//  String musTempl = "MUSTEMPL";
 
 
 }
