@@ -1,3 +1,5 @@
+<!--
+
 <div id="documents_list_div">
   LIST : ${path}
 </div>
@@ -5,3 +7,116 @@
 <script>
     $('#documents_list_div').css({'margin-left': 'auto', 'margin-right': 'auto', 'display': 'block', 'background-color': '#0F0', 'padding': '10px'});
 </script>
+
+-->
+
+<div class="container">
+
+
+  <legend style="margin-bottom:0px">Header</legend>
+  <table class="table table-striped table-condensed" style="margin-bottom:5px">
+    <thead>
+    <tr>
+      <th>Champ 1</th>
+      <th>Champ 2</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a  data-toggle="modal" href="#ViewModal">XXX</a></td>
+      <td>XXX</td>
+    </tr>
+    <tr>
+      <td>YYY</td>
+      <td>YYY</td>
+    </tr>
+    </tbody>
+  </table>
+  <a class="btn" data-toggle="modal" href="#AddModal"><i class="icon-plus"></i> Add new element</a>
+
+
+
+
+
+
+  <div class="modal hide fade" id="AddModal">
+    <div class="modal-header">
+      <a class="close" data-dismiss="modal">x</a>
+      <h3>Add 'Type 1'</h3>
+    </div>
+    <div class="modal-body">
+
+  <form class="form-horizontal">
+    <fieldset>
+      <div class="control-group">
+        <label class="control-label" for="input01">Champ 1</label>
+        <div class="controls">
+          <input type="text" class="input-xlarge" id="input01">
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="input02">Champ 2</label>
+        <div class="controls">
+          <textarea class="input-xlarge" id="input02"></textarea>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="btn" data-dismiss="modal">Cancel</a>
+      <a href="#" class="btn btn-primary">Save</a>
+    </div>
+  </div>
+
+
+
+  <div class="modal hide fade" id="ViewModal">
+    <div class="modal-header">
+      <a class="close" data-dismiss="modal">x</a>
+      <h3>Type 1 : "XXX"</h3>
+    </div>
+    <div class="modal-body-no">
+  <div class="form-actions" style="margin:0px">
+              <button class="btn">Edit</button>
+              <button class="btn">Permissions</button>
+              <button class="btn btn-danger" style="float:right">Delete</button>
+  </div>
+  <table class="table table-condensed" style="margin-bottom:5px">
+    <tbody>
+    <tr>
+      <td>Champ 1</td>
+      <td>XXX</td>
+    </tr>
+    <tr>
+      <td>Champ 2</td>
+      <td>YYY</td>
+    </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+    </div>
+  </div>
+
+
+
+
+  <br />
+  <br />
+  <br />
+
+  <a class="btn btn-success" href="javascript:sample1()">Sample 1: Basic sample</a>
+
+
+  <div id="sampleArea"></div>
+
+
+</div> <!-- /container -->
+
